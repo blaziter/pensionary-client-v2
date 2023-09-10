@@ -1,0 +1,5 @@
+header:has(+ .information-page),
+header:has(+ .events-page),
+header:has(+ .status-page) {
+  display: none;
+}
