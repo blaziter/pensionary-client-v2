@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <>
       <div className="container mx-auto px-4">
@@ -19,5 +19,3 @@ const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;

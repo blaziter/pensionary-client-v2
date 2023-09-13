@@ -1,9 +1,10 @@
-import AdminMenu from './AdminMenu';
-import { DefaultProps } from 'types/DefaultProps';
-import { useAuthentication } from 'hooks/useAuthentication';
 import { Navigate } from 'react-router-dom';
 
-const AdminLayout = (props: DefaultProps) => {
+import { useAuthentication } from '@hooks/useAuthentication';
+import { DefaultProps } from '@types';
+import { AdminMenu } from './AdminMenu';
+
+export const AdminLayout = (props: DefaultProps) => {
   const isAuthenticated = useAuthentication();
 
   return (
@@ -20,5 +21,3 @@ const AdminLayout = (props: DefaultProps) => {
     </>
   );
 };
-
-export default AdminLayout;

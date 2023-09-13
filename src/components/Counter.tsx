@@ -3,7 +3,7 @@ interface Props {
   max: number;
 }
 
-const Counter = (props: Props) => {
+export const Counter = (props: Props) => {
   return (
     <>
       <progress
@@ -14,5 +14,3 @@ const Counter = (props: Props) => {
     </>
   );
 };
-
-export default Counter;

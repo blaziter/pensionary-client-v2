@@ -1,10 +1,10 @@
-import { DefaultProps } from 'types';
+import { DefaultProps } from '@types';
 
 interface Props extends DefaultProps {
   className?: string;
 }
 
-const Container = (props: Props) => {
+export const Container = (props: Props) => {
   return (
     <>
       <div
@@ -17,5 +17,3 @@ const Container = (props: Props) => {
     </>
   );
 };
-
-export default Container;

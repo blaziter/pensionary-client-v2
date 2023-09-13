@@ -1,16 +1,16 @@
-import { DefaultProps } from "types/DefaultProps";
+import { DefaultProps } from '@types';
 
 interface Props extends DefaultProps {
   workplace: string;
   supervisor?: string;
 }
 
-const StatusCard = (props: Props) => {
+export const StatusCard = (props: Props) => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex gap-8">
         <span>{props.workplace}</span>
-        {props.workplace !== "Všeobecné sestry" && (
+        {props.workplace !== 'Všeobecné sestry' && (
           <span>Vedoucí oddělení: {props.supervisor}</span>
         )}
       </div>
@@ -18,5 +18,3 @@ const StatusCard = (props: Props) => {
     </div>
   );
 };
-
-export default StatusCard;

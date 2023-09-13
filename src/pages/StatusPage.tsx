@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import StatusCard from 'components/statusCard';
 
-const StatusPage = () => {
+import StatusCard from '@components/statusCard';
+
+export const StatusPage = () => {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -62,5 +63,3 @@ const StatusPage = () => {
     </>
   );
 };
-
-export default StatusPage;

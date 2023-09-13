@@ -1,11 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './header/Header';
-import { DefaultProps } from 'types';
+
+import { DefaultProps } from '@types';
+import { Footer } from './Footer';
+import { Header } from './header/Header';
 
 interface Props extends DefaultProps {}
 
-const Layout = (props: Props) => {
+export const Layout = (props: Props) => {
   return (
     <>
       <Header />
@@ -14,5 +15,3 @@ const Layout = (props: Props) => {
     </>
   );
 };
-
-export default Layout;

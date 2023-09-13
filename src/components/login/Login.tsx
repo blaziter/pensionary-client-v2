@@ -1,14 +1,15 @@
-import { useAuthentication } from 'hooks/useAuthentication';
 import { useEffect, useRef, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import Container from '../Container';
-import './Login.css';
+
 import {
   MaterialSymbolsAccountCircle,
   MaterialSymbolsPassword,
-} from 'assets/icons';
+} from '@assets/icons';
+import { useAuthentication } from '@hooks/useAuthentication';
+import { Container } from '../Container';
+import './Login.css';
 
-const Login = () => {
+export const Login = () => {
   const usernameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
   const useAuth = useAuthentication();
@@ -98,5 +99,3 @@ const Login = () => {
     </>
   );
 };
-
-export default Login;

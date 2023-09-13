@@ -1,15 +1,16 @@
 import { Link, useParams } from 'react-router-dom';
+
 import {
   ClarityAdministratorSolid,
   FluentPeopleCommunity16Filled,
   HealthIconsDoctor,
   HealthIconsNurse,
   IonStatsChartSharp,
+  MaterialSymbolsCalendarMonthSharp,
   MedicalIconIAdministration,
-} from '../assets/icons';
-import { MaterialSymbolsCalendarMonthSharp } from 'assets/icons/MaterialSymbolsCalendarMonthSharp';
+} from '@assets/icons';
 
-const AdminMenu = () => {
+export const AdminMenu = () => {
   const { role } = useParams();
 
   return (
@@ -100,5 +101,3 @@ const AdminMenu = () => {
     </>
   );
 };
-
-export default AdminMenu;

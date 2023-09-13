@@ -6,7 +6,7 @@ interface Props {
   to: string;
 }
 
-const Tile = ({ title, subtitle, to }: Props) => {
+export const Tile = ({ title, subtitle, to }: Props) => {
   return (
     <>
       <Link to={`/admin/table/${to}/1`}>
@@ -20,5 +20,3 @@ const Tile = ({ title, subtitle, to }: Props) => {
     </>
   );
 };
-
-export default Tile;

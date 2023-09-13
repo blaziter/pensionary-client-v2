@@ -1,7 +1,7 @@
 import { SVGProps } from 'react';
 
 export function MaterialSymbolsCalendarMonthSharp(
-  props: SVGProps<SVGSVGElement>
+  props: SVGProps<SVGSVGElement>,
 ) {
   return (
     <svg
