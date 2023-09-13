@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Container from '../components/Container';
-import Counter from '../components/Counter';
+import Container from 'components/Container';
+import Counter from 'components/Counter';
 import { Navigate } from 'react-router-dom';
-import Color from '../components/Color';
+import Color from 'components/Color';
 
 const InformationPage = () => {
   const [value, setValue] = useState<number>(30);

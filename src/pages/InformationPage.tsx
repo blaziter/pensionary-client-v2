@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Container from '../components/Container';
-import Counter from '../components/Counter';
+import Container from 'components/Container';
+import Counter from 'components/Counter';
 import { Navigate } from 'react-router-dom';
 
 const InformationPage = () => {

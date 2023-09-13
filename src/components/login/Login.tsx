@@ -1,4 +1,4 @@
-import { useAuthentication } from '../../hooks/useAuthentication';
+import { useAuthentication } from 'hooks/useAuthentication';
 import { useEffect, useRef, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Container from '../Container';
@@ -6,7 +6,7 @@ import './Login.css';
 import {
   MaterialSymbolsAccountCircle,
   MaterialSymbolsPassword,
-} from '../icons';
+} from 'assets/icons';
 
 const Login = () => {
   const usernameRef = useRef<HTMLInputElement>(null);

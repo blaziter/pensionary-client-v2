@@ -1,4 +1,4 @@
-import { DefaultProps } from "../../types/DefaultProps";
+import { DefaultProps } from "types/DefaultProps";
 
 interface Props extends DefaultProps {
   workplace: string;

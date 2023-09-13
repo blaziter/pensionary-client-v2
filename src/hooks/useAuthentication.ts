@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { setLogged } from '../features/slices/AuthSlice';
-import { clientApi } from '../features/api/api';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { setLogged } from 'features/slices/AuthSlice';
+import { clientApi } from 'features/api/api';
 
 export const useAuthentication = (): any => {
     const useApi = new clientApi();

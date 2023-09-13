@@ -1,47 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-
-interface Announcement {
-    announcementId: string;
-    title: string;
-    announcement: string;
-}
-
-interface Employee {
-    employeeId: string;
-    suffix: string;
-    prefix: string;
-    name: string;
-    role: string;
-    availability: number;
-    shift: string;
-    workplace: string;
-    imagename: string;
-}
-
-interface EmployeeTypes {
-    role: string;
-}
-
-interface Image {
-    image: string;
-}
-
-interface LoginPayload {
-    payload: {
-        username: string;
-        password: string;
-    };
-}
-
-interface User {
-    userId: string;
-    username: string;
-}
-
-interface GetEmployee {
-    group: string;
-    data: string;
-}
+import { Announcement, Employee, EmployeeType, GetEmployeeByGroup, Image, LoginPayload, User } from 'types';
 
 export class clientApi {
     auth = {
@@ -68,7 +26,7 @@ export class clientApi {
                 .get(`${import.meta.env.VITE_API_URL}/employee/all`)
                 .then(res => res.data);
         },
-        getByRole: async (params: EmployeeTypes): Promise<Employee[]> => {
+        getByRole: async (params: EmployeeType): Promise<Employee[]> => {
             return await this.instance
                 .get(
                     `${
@@ -77,7 +35,7 @@ export class clientApi {
                 )
                 .then(res => res.data);
         },
-        getOne: async (params: GetEmployee): Promise<Employee> => {
+        getOne: async (params: GetEmployeeByGroup): Promise<Employee> => {
             return await this.instance
                 .get(`${import.meta.env.VITE_API_URL}/employee/`, params)
                 .then(res => res.data);

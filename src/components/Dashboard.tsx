@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Tile from './Tile';
-import { clientApi } from '../features/api/api';
+import { clientApi } from 'features/api/api';
 
 const Dashboard = () => {
     const useApi = new clientApi();

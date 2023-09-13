@@ -1,3 +1,3 @@
-export interface DefaultProps {
-  children: React.ReactNode;
+export type DefaultProps = {
+  children?: React.ReactNode;
 }

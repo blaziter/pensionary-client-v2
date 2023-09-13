@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Turnov from '../../assets/turnov-light.svg';
+import Turnov from 'assets/turnov-light.svg';
 import { Dialog, Popover } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, Navigate } from 'react-router-dom';
 import './Header.css';
-import { useAuthentication } from '../../hooks/useAuthentication';
-import { MaterialSymbolsArrowDropDown } from '../icons';
-import { useAppSelector } from '../../app/hooks';
+import { useAuthentication } from 'hooks/useAuthentication';
+import { MaterialSymbolsArrowDropDown } from '../../assets/icons';
+import { useAppSelector } from 'app/hooks';
 
 const Header = () => {
   const isLogged = useAppSelector((state) => state.auth.isLogged);

@@ -1,17 +1,17 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Layout from '../components/Layout';
-import Login from '../components/login/Login';
+import Layout from 'components/Layout';
+import Login from 'components/login/Login';
 import {
     ErrorPage,
     EventsPage,
     HomePage,
     InformationPage,
     StatusPage,
-} from '../pages';
+} from 'pages';
 import '../App.css';
-import Admin from '../components/Admin';
-import Table from '../components/Table';
+import Admin from 'components/Admin';
+import Table from 'components/Table';
 
 const App = () => {
     return (

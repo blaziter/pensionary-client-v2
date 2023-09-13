@@ -1,10 +1,9 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './header/Header';
+import { DefaultProps } from 'types';
 
-interface Props {
-  children: React.ReactNode;
-}
+interface Props extends DefaultProps {}
 
 const Layout = (props: Props) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import StatusCard from '../components/statusCard';
+import StatusCard from 'components/statusCard';
 
 const StatusPage = () => {
   const [date, setDate] = useState(new Date());

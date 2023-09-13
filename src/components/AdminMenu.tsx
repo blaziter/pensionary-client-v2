@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
   ClarityAdministratorSolid,
@@ -7,8 +6,8 @@ import {
   HealthIconsNurse,
   IonStatsChartSharp,
   MedicalIconIAdministration,
-} from './icons';
-import { MaterialSymbolsCalendarMonthSharp } from './icons/MaterialSymbolsCalendarMonthSharp';
+} from '../assets/icons';
+import { MaterialSymbolsCalendarMonthSharp } from 'assets/icons/MaterialSymbolsCalendarMonthSharp';
 
 const AdminMenu = () => {
   const { role } = useParams();

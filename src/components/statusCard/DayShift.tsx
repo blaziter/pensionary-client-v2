@@ -1,5 +1,5 @@
 import React from "react";
-import { Staff } from "../../types/Staff";
+import { Staff } from "types/Staff";
 
 interface Props {
   staff: Staff[];

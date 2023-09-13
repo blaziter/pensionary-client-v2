@@ -1,8 +1,7 @@
-import React from 'react';
+import { DefaultProps } from 'types';
 
-interface Props {
+interface Props extends DefaultProps {
   className?: string;
-  children?: React.ReactNode;
 }
 
 const Container = (props: Props) => {

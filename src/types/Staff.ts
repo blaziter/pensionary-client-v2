@@ -1,3 +1,3 @@
-export interface Staff {
+export type Staff = {
   name: string;
 }

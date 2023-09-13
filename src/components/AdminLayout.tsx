@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
 import AdminMenu from './AdminMenu';
-import { DefaultProps } from '../types/DefaultProps';
-import { useAuthentication } from '../hooks/useAuthentication';
+import { DefaultProps } from 'types/DefaultProps';
+import { useAuthentication } from 'hooks/useAuthentication';
 import { Navigate } from 'react-router-dom';
 
 const AdminLayout = (props: DefaultProps) => {
