@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import StatusCard from '@components/statusCard';
 
+/**
+ * @author blaziter
+ * @returns
+ */
 export const StatusPage = () => {
   const [date, setDate] = useState(new Date());
 

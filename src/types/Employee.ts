@@ -1,3 +1,7 @@
+/**
+ * @author blaziter
+ * @exports Employee
+ */
 export type Employee = {
   employeeId: string;
   suffix: string;

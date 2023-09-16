@@ -11,8 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "rootDir": "src",
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "paths": {
       "@*": ["./*"]
     },

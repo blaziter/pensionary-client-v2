@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * @author blaziter
+ * @returns
+ */
 export const HomePage = () => {
   return (
     <>

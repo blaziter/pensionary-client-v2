@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * @author blaziter
+ * @return
+ */
 export const ErrorPage = () => {
   return (
     <>

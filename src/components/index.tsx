@@ -1,5 +1,10 @@
+/**
+ * @author blaziter
+ * @exports index_components
+ */
 export * from './Admin';
 export * from './AdminLayout';
+export * from './Button';
 export * from './Color';
 export * from './Container';
 export * from './Counter';

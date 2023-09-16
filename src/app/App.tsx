@@ -11,7 +11,7 @@ import {
 } from '@pages';
 import '../App.css';
 
-const App = () => {
+export const App = () => {
   return (
     <Layout>
       <Routes>
@@ -22,16 +22,15 @@ const App = () => {
           <Route path="status" element={<StatusPage />} />
           <Route path="events" element={<EventsPage />} />
         </Route>
-        <Route path="table">
-          <Route path=":role">
-            <Route path="page/:page" />
-            <Route path="edit/:uuid" />
-          </Route>
-        </Route>
         <Route path="admin">
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Admin />} />
-          <Route path="table/:role/:page" element={<Table />} />
+          <Route path="table">
+            <Route path=":role">
+              <Route path="page/:page" element={<Table />} />
+              <Route path="edit/:uuid" />
+            </Route>
+          </Route>
           <Route path="create">
             <Route path="event" />
             <Route path="member" />
@@ -46,5 +45,3 @@ const App = () => {
     </Layout>
   );
 };
-
-export default App;

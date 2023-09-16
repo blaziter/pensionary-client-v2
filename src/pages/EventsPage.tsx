@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 
-import { Color, Container, Counter } from '@/components';
+import { Color, Container, Counter } from '@components';
 
+/**
+ * @author blaziter
+ * @returns
+ */
 export const EventsPage = () => {
   const [value, setValue] = useState<number>(30);
   const [change, setChange] = useState<boolean>(false);

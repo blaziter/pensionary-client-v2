@@ -10,6 +10,10 @@ import {
   User,
 } from '@types';
 
+/**
+ * @author blaziter
+ * @returns API caller
+ */
 export class clientApi {
   auth = {
     login: async (payload: LoginPayload) => {

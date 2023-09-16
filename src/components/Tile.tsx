@@ -6,6 +6,13 @@ interface Props {
   to: string;
 }
 
+/**
+ * @author blaziter
+ * @param title 
+ * @param subtitle 
+ * @param to redirect to route
+ * @returns 
+ */
 export const Tile = ({ title, subtitle, to }: Props) => {
   return (
     <>

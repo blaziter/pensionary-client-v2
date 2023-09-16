@@ -1,3 +1,8 @@
+/**
+ * @author blaziter
+ * @exports index_types
+ */
+
 export { Announcement } from './Announcement';
 export { DefaultProps } from './DefaultProps';
 export { Employee } from './Employee';

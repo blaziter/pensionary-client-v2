@@ -4,7 +4,11 @@ import { useAppDispatch, useAppSelector } from '@app/hooks';
 import { clientApi } from '@features/api/api';
 import { setLogged } from '@features/slices/AuthSlice';
 
-export const useAuthentication = (): any => {
+/**
+ * @author blaziter
+ * @returns 
+ */
+export const useAuthentication = () => {
   const useApi = new clientApi();
   const logged = useAppSelector(state => state.auth.isLogged);
   const [auth, setAuth] = useState(logged);
