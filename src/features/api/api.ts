@@ -1,5 +1,13 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Announcement, Employee, EmployeeType, GetEmployeeByGroup, Image, LoginPayload, User } from 'types';
+import {
+    Announcement,
+    Employee,
+    EmployeeType,
+    GetEmployeeByGroup,
+    Image,
+    LoginPayload,
+    User,
+} from '@types';
 
 export class clientApi {
     auth = {

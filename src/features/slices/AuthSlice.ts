@@ -2,21 +2,21 @@ import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
 export interface AuthState {
-  isLogged: boolean;
+    isLogged: boolean;
 }
 
 const initialState: AuthState = {
-  isLogged: false,
+    isLogged: true,
 };
 
 export const authSlice = createSlice({
-  name: 'auth',
-  initialState,
-  reducers: {
-    setLogged(state, action: PayloadAction<boolean>) {
-      state.isLogged = action.payload;
+    name: 'auth',
+    initialState,
+    reducers: {
+        setLogged(state, action: PayloadAction<boolean>) {
+            state.isLogged = action.payload;
+        },
     },
-  },
 });
 
 export const { setLogged } = authSlice.actions;

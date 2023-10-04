@@ -1,21 +1,21 @@
-import { DefaultProps } from 'types';
+import { DefaultProps } from '@types';
 
 interface Props extends DefaultProps {
-  className?: string;
+    className?: string;
 }
 
-const Container = (props: Props) => {
-  return (
-    <>
-      <div
-        className={
-          props.className ? `container ${props.className}` : 'container mx-auto'
-        }
-      >
-        {props.children}
-      </div>
-    </>
-  );
+export const Container = (props: Props) => {
+    return (
+        <>
+            <div
+                className={
+                    props.className
+                        ? `container ${props.className}`
+                        : 'container mx-auto'
+                }
+            >
+                {props.children}
+            </div>
+        </>
+    );
 };
-
-export default Container;

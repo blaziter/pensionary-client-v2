@@ -1,12 +1,10 @@
-import Dashboard from './Dashboard';
-import AdminLayout from './AdminLayout';
+import { AdminLayout } from './AdminLayout';
+import { Dashboard } from './Dashboard';
 
-const Admin = () => {
-  return (
-    <AdminLayout>
-      <Dashboard />
-    </AdminLayout>
-  );
+export const Admin = () => {
+    return (
+        <AdminLayout>
+            <Dashboard />
+        </AdminLayout>
+    );
 };
-
-export default Admin;

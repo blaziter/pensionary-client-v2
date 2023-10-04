@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import AdminMenu from './AdminMenu';
-import AdminLayout from './AdminLayout';
-import { clientApi } from 'features/api/api';
-import { Employee } from 'types';
+import { Employee } from '@types';
+import { AdminLayout } from './AdminLayout';
+import { clientApi } from '@features/api/api';
 
-const Table = () => {
+export const Table = () => {
     const { role } = useParams();
     const useApi = new clientApi();
     const [employees, setEmployees] = useState<Employee[]>();
@@ -22,5 +21,3 @@ const Table = () => {
         </>
     );
 };
-
-export default Table;

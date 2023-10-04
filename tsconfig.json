@@ -12,13 +12,9 @@
         "module": "ESNext",
         "moduleResolution": "Node",
         "rootDir": "src",
-        "baseUrl": "src",
+        "baseUrl": ".",
         "paths": {
-            "@assets": ["src/assets/*"],
-            "@features": ["src/features/*"],
-            "@hooks": ["src/hooks/*"],
-            "@pages": ["src/pages/*"],
-            "@types": ["src/types/*"]
+            "@*": ["src/*"],
         },
         "resolveJsonModule": true,
         "noEmit": true,

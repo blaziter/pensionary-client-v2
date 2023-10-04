@@ -8,4 +8,4 @@ export type Employee = {
     shift: string;
     workplace: string;
     imagename: string;
-}
+};

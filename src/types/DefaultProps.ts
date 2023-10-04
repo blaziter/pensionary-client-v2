@@ -1,3 +1,3 @@
 export type DefaultProps = {
-  children?: React.ReactNode;
-}
+    children?: React.ReactNode;
+};

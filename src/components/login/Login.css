@@ -10,8 +10,8 @@
     transition: all 0.25s;
 }
 
-.login-input:focus+.login-placeholder,
-.login--non-empty+.login-placeholder {
+.login-input:focus + .login-placeholder,
+.login--non-empty + .login-placeholder {
     opacity: 0;
     transform: scale(0.75);
 }
@@ -20,12 +20,12 @@
     transition: all 0.25s;
 }
 
-.login-input~.login-title {
+.login-input ~ .login-title {
     opacity: 0;
 }
 
-.login-input:focus~.login-title,
-.login--non-empty~.login-title {
+.login-input:focus ~ .login-title,
+.login--non-empty ~ .login-title {
     opacity: 1;
     transform: scale(1);
 }

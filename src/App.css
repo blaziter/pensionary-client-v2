@@ -1,5 +1,11 @@
-header:has(+ .information-page),
-header:has(+ .events-page),
-header:has(+ .status-page) {
-  display: none;
+header:has(+ div > .information-page),
+header:has(+ div > .events-page),
+header:has(+ div > .status-page) {
+    display: none;
+}
+
+div:has(.information-page),
+div:has(.events-page),
+div:has(.status-page) {
+    padding: 0;
 }

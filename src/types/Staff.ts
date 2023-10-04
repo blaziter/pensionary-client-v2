@@ -1,3 +1,3 @@
 export type Staff = {
-  name: string;
-}
+    name: string;
+};

@@ -6,4 +6,5 @@ export { FluentPeopleCommunity16Filled } from './FluentPeopleCommunity16Filled';
 export { HealthIconsDoctor } from './HealthIconsDoctor';
 export { HealthIconsNurse } from './HealthIconsNurse';
 export { IonStatsChartSharp } from './IonStatsChartSharp';
+export { MaterialSymbolsCalendarMonthSharp } from './MaterialSymbolsCalendarMonthSharp';
 export { MedicalIconIAdministration } from './MedicalIconIAdministration';

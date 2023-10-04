@@ -1,12 +1,10 @@
-import React from "react";
-import { Staff } from "types/Staff";
+import React from 'react';
+import { Staff } from '@types';
 
 interface Props {
-  staff: Staff[];
+    staff: Staff[];
 }
 
-const NightShift = (props: Props) => {
-  return <div></div>;
+export const NightShift = (props: Props) => {
+    return <div></div>;
 };
-
-export default NightShift;

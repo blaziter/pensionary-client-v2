@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Tile from './Tile';
-import { clientApi } from 'features/api/api';
+import { clientApi } from '@features/api/api';
+import { Tile } from './Tile';
 
-const Dashboard = () => {
+export const Dashboard = () => {
     const useApi = new clientApi();
     const [employees, setEmployees] = useState(0);
     const [doctors, setDoctors] = useState(0);
@@ -39,5 +39,3 @@ const Dashboard = () => {
         </>
     );
 };
-
-export default Dashboard;

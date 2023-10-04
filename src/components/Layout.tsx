@@ -1,18 +1,16 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './header/Header';
-import { DefaultProps } from 'types';
+import { DefaultProps } from '@types';
+import { Header } from './Header';
+import { Footer } from './Footer';
 
 interface Props extends DefaultProps {}
 
-const Layout = (props: Props) => {
-  return (
-    <>
-      <Header />
-      {props.children}
-      <Footer />
-    </>
-  );
+export const Layout = (props: Props) => {
+    return (
+        <>
+            <Header />
+            <div className="px-2 py-4">{props.children}</div>
+            <Footer />
+        </>
+    );
 };
-
-export default Layout;
